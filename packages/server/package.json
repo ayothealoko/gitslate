@@ -1,12 +1,12 @@
 {
   "name": "server",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "./server/index.ts",
-  "type": "module",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon --watch app --exec 'ts-node --esm' ./app/index.ts"
+    "dev": "nodemon --watch app --exec 'ts-node-esm' ./app/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "express": "^4.18.2",
     "isomorphic-git": "^1.24.5",
     "shared-code": "0.0.0",
+    "tsx": "^4.17.0",
     "winston": "^3.8.2",
     "zod": "^3.22.2"
   },
@@ -38,7 +39,6 @@
     "prettier": "^2.8.7",
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.1",
-    "ts-node": "^10.9.1",
     "typescript": "^5.0.3"
   }
 }
